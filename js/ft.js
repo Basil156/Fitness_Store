@@ -84,7 +84,7 @@ function initApp(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="./img/${value.image}" style= "width: 80%; height:60%;">
+            <img src="./img/${value.image}" style= "width: 20%; height:20%;">
             <div style="font-weight: bold; font-size:20px;" class="title">${value.name}</div>
             <div style="font-weight: bold; font-size:17px;" class="price">${value.price.toLocaleString() + "$"}</div>
             <button style="font-weight: bold; font-size:20px; background-color:#457b9d; border-radius: 20px; cursor: pointer; " onclick="addToCard(${key})">Add To Card</button>
@@ -114,7 +114,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="img/${value.image}"/></div>
+                <div><img src="./img/${value.image}"/></div>
                 <div style="font-weight: bold;">${value.name}</div>
                 <div style="font-weight: bold;" >${value.price.toLocaleString()}</div>
                 <div>
