@@ -114,7 +114,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="img/${value.image}"/></div>
+                <div><img src="./img/${value.image}"/></div>
                 <div style="font-weight: bold;">${value.name}</div>
                 <div style="font-weight: bold;" >${value.price.toLocaleString()}</div>
                 <div>
