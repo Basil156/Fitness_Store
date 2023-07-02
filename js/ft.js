@@ -84,7 +84,7 @@ function initApp(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="img/${value.image}" style= "width: 80%; height:60%;">
+            <img src="./img/${value.image}" style= "width: 80%; height:60%;">
             <div style="font-weight: bold; font-size:20px;" class="title">${value.name}</div>
             <div style="font-weight: bold; font-size:17px;" class="price">${value.price.toLocaleString() + "$"}</div>
             <button style="font-weight: bold; font-size:20px; background-color:#457b9d; border-radius: 20px; cursor: pointer; " onclick="addToCard(${key})">Add To Card</button>
