@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <title>Fitness Legends</title>
-    <link rel="icon" href="img/weights.png">
-
-    <script src="js/ft.js" async></script>
+    <link rel="icon" href="./img/weights.png" >
 
     <!-- CUSTOM CSS FILE LINK-->
-    <link rel="stylesheet" href="CSS/STYLE.CSS">
-    
-
-</head>
+    <link rel="stylesheet" href="./CSS/STYLE.CSS">
+   
+</head> 
 
 <body>
 
@@ -28,33 +25,46 @@
         <div class="navber">
             <b>
                 <a href="#home">الصفحة الرئيسية</a>
-                <a href="#all">نحن الأفضل</a>
-                <a href="#our">منتجاتنا</a>
+                <a href="#all">الكل</a>
+                <a href="#shoes">الأحذية</a>
+                <a href="#tools">الأدوات</a>
+                <a href="#clothes">الملابس</a>
                 <a href="#footer">تواصل معنا</a>
-
             </b>
 
         </div>
         <div class="icons">
-            <!-- <a href="#" class="fas fa-heart"></a> -->
             <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
             <a href="#" class="fas fa-user"></a>
             <a href="#" class="fas fa-"></a>
         </div>
-        <div class="shopping">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <span class="quantity">0</span>
-        </div>
-    </div>
+        <div class="cart">
+            <h2 class="cart-title">your cart</h2>
+            <!--content-->
+            <div class="cart-content">
+               <div class="cart-box">
+                   <img src="./img/1-zoom-desktop (2).jpg" alt="" class="cart-img" width="90" height="90">
+                   <div class="detail-box">
+                       <div class="cart-product-title">shoes</div>
+                       <div class="cart-price">170$</div>
+                       <input type="number" value="1" class="cart-quantity">
+                   </div>
+                   <i class="fas fa-trash-alt cart-remove"></i>
+               </div>
+            </div>
+            <div class="total">
+               <div class="total-title">total</div>
+               <div class="total-price">0$</div>
+           </div>
+           <!--buy button-->
+           <button type="button" class="btn-buy">buy now</button>
+           <i class="fas fa-x" id="close-cart"></i>
+       </div>
+        
+        <!--total-->
+        
 
-    <div class="card">
-        <h1>Card</h1>
-        <ul class="listCard">
-        </ul>
-        <div class="checkOut">
-            <div class="total">0</div>
-            <div class="closeShopping">Close</div>
-        </div>
     </div>
     <!-- HEADER SECTION END-->
     <!--HOME SECTION STARTS-->
@@ -63,7 +73,7 @@
             <h3>Fitness Legends</h3>
             <span> لحياة اكثر صحة ورشاقة </span>
             <p>متجر مختص ببيع جميع ما تحتاجه للقيام بنشاطك اليومي بكل اريحة</p>
-            <a href="#our" class="btn"> shop now </a>
+            <a href="#shoes" class="btn"> shop now </a>
 
         </div>
 
@@ -79,17 +89,19 @@
                 <video src="./video/pexels-cottonbro-studio-10340704-4096x2160-25fps.mp4" loop autoplay muted width="800"
                     height="500"></video>
             </div>
-            <div class="content">
+            <div class="content" dir="rtl">
                 <h3>لماذا عليك اختيارنا؟</h3>
                 <p>
-                    يعد متجرنا الإلكتروني المتخصص في بيع الأدوات الرياضية وجهتك المفضلة للحصول على كل ما تحتاجه لممارسة
-                    أنشطتك الرياضية بأفضل طريقة ممكنة. يتيح لك موقعنا الإلكتروني الوصول إلى مجموعة واسعة من المنتجات
-                    الرياضية عالية الجودة من أفضل العلامات التجارية الموثوقة، بما في ذلك الأحذية الرياضية، والملابس
-                    الرياضية، والأجهزة الرياضية، والإكسسوارات الرياضية،
+                    يعد متجرنا الإلكتروني المتخصص في بيع الأدوات الرياضية وجهتك المفضلة للحصول على كل ما تحتاجه لممارسة أنشطتك الرياضية بأفضل طريقة ممكنة. يتيح لك موقعنا الإلكتروني الوصول إلى مجموعة واسعة من المنتجات الرياضية عالية الجودة من أفضل العلامات التجارية الموثوقة، بما في ذلك الأحذية الرياضية، والملابس الرياضية، والأجهزة الرياضية، والإكسسوارات الرياضية، والمنتجات الغذائية الرياضية.
                 </p>
                 <a href="#" class="btn">learn moore</a>
             </div>
+
+
+
+
         </div>
+
     </section>
 
 
@@ -98,7 +110,7 @@
     <!--ICONS SECTION STARTS-->
     <section class="icons-container">
         <div class="icone">
-            <img src="img/icone1.png" alt="" width="50" height="50">
+            <img src="./img/icone1.png" alt="" width="50" height="50">
             <div class="info">
                 <h3>free delivery</h3>
                 <span>on all orders</span>
@@ -106,7 +118,7 @@
         </div>
 
         <div class="icone">
-            <img src="img/icone2.png" alt="" width="50" height="50">
+            <img src="./img/icone2.png" alt="" width="50" height="50">
             <div class="info">
                 <h3>10 days returns</h3>
                 <span>moneyback guarantee</span>
@@ -133,27 +145,248 @@
 
 
     <!-- SHOES SECTION STARTS-->
-    <section class="our" id="our">
-        <h1 class="heading">Our <span>products</span> </h1>
-        <div class="list">
+    <section class="shoes" id="shoes">
+        <h1 class="heading">section <span>shoes</span> </h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="./img/1-zoom-desktop.jpg" width="500" height="400">
+                    <div class="icone">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="./prdact 2/index2.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>sports shoes nike</h3>
+                    <div class="price">120$ <span>200$</span>
+                    </div>
+                </div>
 
 
+            </div>
 
-        </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="./img/1-zoom-desktop (2).jpg" width="500" height="400">
+                    <div class="icone">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="./prdact 6/index6.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>sports shoes adidas</h3>
+                    <div class="price">170$ <span>300$</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
     </section>
+    <!-- SHOES SECTION ENDS-->
+
+    <!-- SPORT TOOLS SECTION STARTS-->
+    <section class="tools" id="tools">
+        <h1 class="heading">section <span>tools</span> </h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="./img/TENNIS.jpg" width="400" height="200">
+                    <div class="icone">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="./prdact 7/index7.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>tennis</h3>
+                    <div class="price">65$ <span>110$</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="./img/BALL.jpg" width="400" height="200">
+                    <div class="icone">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="./prdact 8/index8.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>ball</h3>
+                    <div class="price">80$ <span>100$</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="./img/BOXING 2.jpg" width="400" height="200">
+                    <div class="icone">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="./prdact 9/index9.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>boxing gloves</h3>
+                    <div class="price">40$ <span>90$</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="./img/GLOVES2.jpg" width="400" height="200">
+                    <div class="icone">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="./prdact 10/index10.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>gloves</h3>
+                    <div class="price">50$ <span>88$</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="./img/YOGA 2.jpg" width="400" height="200">
+                    <div class="icone">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="./prdact 11/index11.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>yoga mat</h3>
+                    <div class="price">86$ <span>115$</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="./img/اثقال 2.jpg" width="400" height="200">
+                    <div class="icone">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="./prdact 12/index12.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>iron weights</h3>
+                    <div class="price">150$ <span>90$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- SPORT TOOLS SECTION ENDS-->
+
+
+    <!-- CLOTHES SECTION STARTS-->
+    <section class="clothes" id="clothes">
+        <h1 class="heading">section <span>clothes</span> </h1>
+        <div class="box-container">
+            
+
+
+
+            <div class="box">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="./img/WAMAN 2.jpg" width="300" height="100">
+                    <div class="icone">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="./prdact 3/index3.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>sweatpants adidas</h3>
+                    <div class="price">110$ <span>170$</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="./img/MAN.jpg" width="300" height="100">
+                    <div class="icone">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="./prdact 4/index4.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>mans pajamas adidas</h3>
+                    <div class="price">130$ <span>160$</span>
+                    </div>
+                </div>
+
+            </div>
+
+          
+
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="./img/man 3.jpg" width="300" height="100">
+                    <div class="icone">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="./prdact 5/index 5.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>mans pajamas puma</h3>
+                    <div class="price">105$ <span>140$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!--CLOTHES SECTION ENDS-->
+
     <!--FOOTER SECTION STARTS-->
     <section class=footer id="footer">
         <div class="box-container">
             <div class="box">
                 <h3>QUICK-LINKS</h3>
-                <a href="#home">الصفحة الرئيسية</a>
-                <a href="#all">نحن الأفضل</a>
-                <a href="#our">منتجاتنا</a>
-                <a href="#footer">تواصل معنا</a>
-
+                <a href="#">الصفحة الرئيسية</a>
+                <a href="#">الكل</a>
+                <a href="#shoes">الأحذية</a>
+                <a href="#tools">الأدوات</a>
+                <a href="#clothes">الملابس</a>
+                <a href="#">تواصل معنا</a>
             </div>
 
             <div class="box">
@@ -166,7 +399,7 @@
             <div class="box">
                 <h3>LOCATIONS</h3>
                 <a href="#">DAMASCUS</a>
-                <a href="#">ALeppo</a>
+                <a href="#">ALEPPO</a>
                 <a href="#">DARAA</a>
                 <a href="#">LATAKIA</a>
                 <a href="#">HOMS</a>
@@ -176,25 +409,22 @@
 
             <div class="box">
                 <h3>CONTACT INFO</h3>
-                <a href="#">+963-932-412-111</a>
+                <a href="#">raghad_177055</a>
                 <a href="#">fitness@gmail.com</a>
                 <a href="#">DAMASCUS-HAMRA-55000</a>
-                <img src="./img/paypal.png" alt="" width="100" height="50">
-                <img src="./img/card.png" alt="" width="100" height="50">
-                <img src="./img/card (1).png" alt="" width="100" height="50">
-                <img src="./img/visa.png" alt="" width="100" height="50">
+                <img src="./img/paypal.png" alt="" width="100" height="80">
+                <img src="./img/card.png" alt="" width="100" height="80">
+                <img src="./img/card (1).png" alt="" width="100" height="80">
+                <img src="./img/visa.png" alt="" width="100" height="80">
             </div>
 
         </div>
-
-        <div class="cardit">carted by <span>ENG.RAGHAD-177055 <br> ENG.MANAR_180508 <br> ENG.LEEN_161577 <br>
-                ENG.MOAZ_177184 <br></span> all rights reserved</div>
-
-
-
-
+        
+        <div class="cardit">carted by <span>ENG.RAGHAD <br> ENG.MANAR <br> ENG.LEEN <br> ENG.MOAZ <br></span> all rights reserved</div>
 
     </section>
+    <!--link to js-->
+    <script src="./js/fitness.js"></script>
 
 
 
